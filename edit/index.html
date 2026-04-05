@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aashutosh Dahal — Software Engineer III at JPMorgan Chase. Microservices, cloud architecture, distributed systems.">
+  <title>Aashutosh Dahal — Software Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"     id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">AD</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Stack</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+       Three.js canvas sits behind content.
+       pointer-events:auto so user can grab it.
+  ═══════════════════════════════════════════ -->
+  <section id="hero">
+
+    <!-- DevOps ∞ canvas — interactive, sits in background -->
+    <canvas id="threeCanvas"></canvas>
+
+    <!-- Left: text content -->
+    <div class="hero-content">
+      <p class="hero-label">Software Engineer III &nbsp;&middot;&nbsp; JPMorgan Chase</p>
+      <h1 class="hero-name">Aashutosh<br><span>Dahal</span></h1>
+      <p class="hero-subtitle" id="tw"><span class="tw-cursor"></span></p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary"><span>Get in touch</span></a>
+        <a href="#experience" class="btn-ghost">View experience</a>
+      </div>
+    </div>
+
+    <!-- Drag hint -->
+    <div class="devops-hint">Drag to rotate ∞</div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="about">
+    <div class="s-label">01 &mdash; About</div>
+    <div class="about-grid">
+
+      <!-- Profile photo (replaces 3D avatar) -->
+      <div class="avatar-wrap reveal">
+        <div class="avatar-photo-container">
+          <img
+            src="assets/profile.png"
+            alt="Aashutosh Dahal"
+            class="avatar-photo"
+          >
+        </div>
+        <div class="avatar-label">Aashutosh Dahal &middot; JPMC SWE III</div>
+      </div>
+
+      <!-- Bio -->
+      <div class="about-copy">
+        <p class="reveal">
+          <strong>Results-driven Software Engineer III</strong> with expertise in building scalable,
+          high-performance financial systems. Currently at JPMorgan Chase, architecting
+          microservices-based trading platforms processing millions of transactions daily.
+        </p>
+        <p class="reveal d1">
+          Specialized in <strong>microservices architecture</strong>, distributed systems, and
+          cloud-native DevOps. Strong background in algorithmic problem-solving and system design
+          &mdash; with a demonstrated ability to lead technical initiatives and mentor junior engineers.
+        </p>
+        <p class="reveal d2">
+          BS in Computer Science with a Minor in Mathematics from the University of New Mexico.
+          Passionate about engineering systems that are not just functional, but built to last.
+        </p>
+        <div class="about-stats reveal d3">
+          <div><div class="stat-num">40%</div><div class="stat-lbl">Latency reduced</div></div>
+          <div><div class="stat-num">500K+</div><div class="stat-lbl">API requests/day</div></div>
+          <div><div class="stat-num">99.7%</div><div class="stat-lbl">System uptime</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="s-label">02 &mdash; Tech Stack</div>
+    <h2 class="s-title reveal">Tools of the trade</h2>
+    <div class="skill-groups">
+      <div class="reveal">
+        <div class="sg-label">Languages</div>
+        <div class="sg-tags">
+          <span class="tag">Java</span><span class="tag">Python</span>
+          <span class="tag">TypeScript</span><span class="tag">JavaScript</span>
+          <span class="tag">SQL</span><span class="tag">Go</span>
+          <span class="tag">Scala</span><span class="tag">C++</span>
+        </div>
+      </div>
+      <div class="reveal d1">
+        <div class="sg-label">Frameworks &amp; Libraries</div>
+        <div class="sg-tags">
+          <span class="tag">Spring Boot</span><span class="tag">React</span>
+          <span class="tag">Angular</span><span class="tag">Node.js</span>
+          <span class="tag">Django</span><span class="tag">Flask</span>
+          <span class="tag">Hibernate</span><span class="tag">JUnit</span>
+          <span class="tag">Mockito</span>
+        </div>
+      </div>
+      <div class="reveal d2">
+        <div class="sg-label">Cloud &amp; DevOps</div>
+        <div class="sg-tags">
+          <span class="tag">AWS EC2</span><span class="tag">AWS Lambda</span>
+          <span class="tag">AWS S3</span><span class="tag">AWS ECS</span>
+          <span class="tag">Docker</span><span class="tag">Kubernetes</span>
+          <span class="tag">Jenkins</span><span class="tag">GitLab CI/CD</span>
+          <span class="tag">Terraform</span>
+        </div>
+      </div>
+      <div class="reveal d3">
+        <div class="sg-label">Databases &amp; Observability</div>
+        <div class="sg-tags">
+          <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span>
+          <span class="tag">Redis</span><span class="tag">Cassandra</span>
+          <span class="tag">DynamoDB</span><span class="tag">Apache Kafka</span>
+          <span class="tag">RabbitMQ</span><span class="tag">Elasticsearch</span>
+          <span class="tag">Grafana</span><span class="tag">Prometheus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EXPERIENCE
+  ═══════════════════════════════════════════ -->
+  <section id="experience">
+    <div class="s-label">03 &mdash; Current Experience</div>
+    <h2 class="s-title reveal">Where I am building</h2>
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">Software Engineer III</div>
+          <div class="exp-company">JPMorgan Chase &amp; Co.</div>
+        </div>
+        <div class="exp-date">June 2025 &mdash; Present</div>
+      </div>
+      <div class="exp-divider"></div>
+      <div class="exp-grid">
+        <div class="exp-bullet">Architected microservices-based trading platform processing millions of daily transactions &mdash; reduced latency 40% via Spring Boot and Redis caching.</div>
+        <div class="exp-bullet">Led migration of legacy monoliths to AWS with Docker and Kubernetes, achieving 99.7% uptime and 60% faster deployments.</div>
+        <div class="exp-bullet">Migrated legacy TIBCO EMS middleware to Amazon SQS, enabling cloud-native event-driven processing and cutting operational overhead.</div>
+        <div class="exp-bullet">Built real-time streaming pipelines with Apache Kafka and AWS Lambda for instant transaction processing and risk analytics.</div>
+        <div class="exp-bullet">Designed RESTful APIs serving 500K+ daily requests at sub-100ms latency, integrated with React front-ends.</div>
+        <div class="exp-bullet">Spearheaded CI/CD adoption with Jenkins and GitLab &mdash; automated pipelines reduced production incidents by 75%.</div>
+        <div class="exp-bullet">Optimized PostgreSQL queries and implemented sharding strategies, improving query performance by 50% for high-volume financial data.</div>
+        <div class="exp-bullet">Mentored junior engineers on system design, code reviews, and performance optimization best practices.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="s-label">04 &mdash; Contact</div>
+    <h2 class="contact-headline reveal">Let's build<br>something <em>great</em></h2>
+    <p class="contact-sub reveal d1">
+      Open to new opportunities, collaborations, and interesting conversations.
+      I'd love to hear from you.
+    </p>
+    <a href="mailto:aashutosh.dahal@example.com" class="contact-email reveal d2">
+      aashutosh.dahal@example.com
+    </a>
+    <div class="contact-btns reveal d3">
+      <a href="https://www.linkedin.com/in/aashutosh-dahal-531297216/" target="_blank" class="c-btn">LinkedIn</a>
+      <a href="mailto:aashutosh.dahal@example.com" class="c-btn">Email</a>
+      <a href="tel:+14697086541" class="c-btn">+1 469 708 6541</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Aashutosh Dahal</span>
+    <span>Engineered with precision</span>
+  </footer>
+
+  <!-- ── Scripts ── -->
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Interactive DevOps ∞ hero -->
+  <script src="js/hero.js"></script>
+  <!-- UI: cursor, nav, typewriter, scroll reveal -->
+  <script src="js/ui.js"></script>
+
+</body>
+</html>
